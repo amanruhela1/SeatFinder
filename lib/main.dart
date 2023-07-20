@@ -34,7 +34,6 @@ class _SeatFinderScreenState extends State<SeatFinderScreen> {
   void findBerth() {
     setState(() {
       // Logic to find the berth based on seat number
-      // You can modify this logic based on your requirements
       if (seatNumber != null && seatNumber!.isNotEmpty) {
         if (int.tryParse(seatNumber!) != null &&
             int.parse(seatNumber!) >= 1 &&
@@ -69,7 +68,7 @@ class _SeatFinderScreenState extends State<SeatFinderScreen> {
   void _scrollToSeat(String seat) {
     final seatIndex = int.parse(seat) - 1; // Subtract 1 to get the correct index
     final screenHeight = MediaQuery.of(context).size.height;
-    final rowHeight = 80.0; // Height of each row (you can adjust this value based on your layout)
+    final rowHeight = 80.0; // Height of each row 
     final seatPosition = seatIndex * rowHeight;
     final middleOfScreen = screenHeight / 2;
     final rowOffset = middleOfScreen - rowHeight / 2;
@@ -155,12 +154,6 @@ class _SeatFinderScreenState extends State<SeatFinderScreen> {
       body: SingleChildScrollView(
         controller: _scrollController,
         child: Container(
-          decoration: BoxDecoration(
-            // image: DecorationImage(
-            //   image: AssetImage('assets/abcd.jpeg'), // Replace with your train boggy inside image
-            //   fit: BoxFit.cover,
-            // ),
-          ),
           child: Column(
             children: [
               SizedBox(height: 50.0),
