@@ -2,6 +2,10 @@
 
 This is a simple Flutter app called "Seat Finder" that allows users to find the berth type based on the seat number they input. The app provides a visual representation of train seats and displays the corresponding berth type when a seat is selected.
 
+## Demonstration
+
+https://github.com/amanruhela1/SeatFinder/assets/89697559/a85000db-4572-4c15-b7b5-718e01e89bc0
+
 ## How it Works
 
 1. The app consists of two main screens: `SplashScreen` (initial screen) and `SeatFinderScreen` (main seat finder screen).
